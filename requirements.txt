@@ -1,0 +1,24 @@
+# Core FastAPI framework
+fastapi
+uvicorn[standard] # ASGI server with standard extras (websockets, http-tools)
+
+# Database (MongoDB)
+motor # Async MongoDB driver
+pymongo # Required by Motor, good practice to specify
+
+# Configuration & Settings
+pydantic # Data validation and settings management
+pydantic-settings # For loading settings from .env files with Pydantic V2+
+python-dotenv # For loading .env file variables into environment
+
+# LLM Interaction (Google Gemini)
+google-generativeai # Google Gemini SDK (check for latest stable version)
+
+# Background Task Scheduling
+apscheduler # Asynchronous task scheduler
+
+# Logging (Optional but recommended)
+loguru # Flexible and powerful logging library
+
+# Typing helpers (may be needed for older Python versions or complex types)
+# typing-extensions
