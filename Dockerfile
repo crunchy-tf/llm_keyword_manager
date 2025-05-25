@@ -2,8 +2,8 @@
 FROM python:3.10-slim
 
 # Set environment variables to prevent caching issues and ensure output is logged immediately
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 # Optional: Set default timezone for consistency if needed
 # ENV TZ=Etc/UTC
 # RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
