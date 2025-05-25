@@ -23,7 +23,6 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # Copy application code into the container
 # Ensure source files are in 'app' and context files are in 'context_data' at the build context root
 COPY ./app /app/app
-COPY ./context_data /app/context_data
 
 # Expose the port the app runs on (must match the CMD port)
 EXPOSE 8000
